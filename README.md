@@ -12,3 +12,10 @@ and smaller physical size as compared with the state-of-the-art CMOS and memrist
 F. Kenarangi, X. Hu, Y. Liu, J.A.C. Incorvia, J.S. Friedman, and I. P.-Vaisband, “Exploiting Dual-Gate
 Ambipolar CNFETs for Scalable Machine Learning Classification,” Scientific Reports, 2019 (under review,
 [Link](https://arxiv.org/abs/1912.04068)).
+
+## Directory Structure
+- Data - input data (features and weights)
+- lib - library of the components used for simulation
+- src - simulation files (netlist of the circuit)
+- log - results of the simulation
+
