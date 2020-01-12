@@ -26,7 +26,7 @@ Ambipolar CNFETs for Scalable Machine Learning Classification,” Scientific Rep
 
 1. Download the repository directly as a zip file or using git clone command:
 
-'git clone https://github.com/faridken/AP-CNFET_based_ML.git'
+`git clone https://github.com/faridken/AP-CNFET_based_ML.git`
 
 
 
