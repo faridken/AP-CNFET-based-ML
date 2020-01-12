@@ -14,8 +14,12 @@ Ambipolar CNFETs for Scalable Machine Learning Classification,” Scientific Rep
 [Link](https://arxiv.org/abs/1912.04068)).
 
 ## Directory Structure
-- Data - input data (features and weights)
+- data - input data (features and feature weights)
 - lib - library of the components used for simulation
 - src - simulation files (netlist of the circuit)
 - log - results of the simulation
+
+## Verified platform
+centos 7
+
 
