@@ -22,4 +22,7 @@ Ambipolar CNFETs for Scalable Machine Learning Classification,” Scientific Rep
 ## Verified platform
 [Centos 7](https://www.centos.org/)
 
+## Run Simulation
+
+
 
