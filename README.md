@@ -28,14 +28,9 @@ Ambipolar CNFETs for Scalable Machine Learning Classification,” Scientific Rep
 
 `git clone https://github.com/faridken/AP-CNFET_based_ML.git`
 
+2. Make sure you have downloaded the files to a directory where you can envoke spectre simulator in Cadence
 
-2. Go to the src directory 
-
-`cd AP-CNFET_based_ML/src`
-
-3. Make sure you have downloaded the files to a directory where you can envoke spectre simulator in Cadence
-
-4. To point out to the correct component models you may need to change the dicretory of the modesl within netlist file (last three lines as attached below)
+3. To point out to the correct component models you may need to change the dicretory of the modesl within netlist file (last three lines as attached below)
 
 `ahdl_include "../lib/AP-CNFET/veriloga/veriloga.va"`
 
@@ -45,6 +40,17 @@ Ambipolar CNFETs for Scalable Machine Learning Classification,” Scientific Rep
 
 In this case we read the resistor and transistor models from the lib directory and read the analog_mux model from cadence directory which varies based on the installation directory.
 
+4. Go to the src directory 
+
+`cd AP-CNFET_based_ML/src`
+
+5. Enovoke the simulation using the commad below
+
+`spectre -64 ++aps +mt AP-CNFET.netlist`
+
+6. The simulation results will be stored in "AP-CNFET.raw" file.
+
+7. 
 
 
 
