@@ -1,0 +1,248 @@
+// VerilogA for 8V70_TEDCNT5, core1, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module CNT4_transient(A, B, FG, BG);
+inout A, B, FG, BG;
+//output SF;
+
+electrical A, B, FG, BG;
+//voltage SF;
+
+
+parameter real M = 5;
+
+parameter real Vthp = 0.1;
+parameter real Vthn = 0.1;
+
+parameter real VB_th = 0;
+
+parameter real Con_n = 50E-11;
+parameter real Con_p = 50E-11;
+
+parameter real In_min = 10E-16;
+parameter real Ip_min = 10E-16;
+
+parameter real Coe_DS = 2000;
+parameter real Roff = 10M;
+parameter real Coe_fixed_DS = 1E-9;
+
+parameter real C_conv = 1a;
+
+parameter real C_par = 5f;
+
+
+real VFGA;
+real VFGB;
+real In;
+real Ip;
+real VAB;
+
+real IAconv;
+real IBconv;
+
+//real VSFi;
+real Iout;
+
+real Con_n_eff;
+real Con_p_eff;
+
+analog begin
+VFGA = V(FG, A);
+VFGB = V(FG, B);
+VAB = V(A, B);
+
+
+//Switch A/B node by detecting the V(A,B). It'll help determing whether voltage is used to calculate current
+
+//If Veff is a minus value, 'if' statements are used to limit the current to a fixed minimum level rather than a bounced back current
+//that statements are also necessary for BG current
+
+if(VAB>0)
+begin
+
+Con_n_eff = Con_n * (0.1 + (V(BG, B) - VB_th));
+Con_p_eff = Con_p * (0.1 + (V(A, BG) + VB_th));
+
+
+
+	//if((V(FG, B)>Vthn) && V(BG, B) > 0)
+	if((Con_n_eff > Con_p_eff) && (V(FG, B)>Vthn))
+	begin
+	In = Con_n_eff * pow((V(FG, B) - Vthn), 2) * pow((0.01 + (V(BG, B) - VB_th)), 2) * (Coe_fixed_DS+ Coe_DS * V(A, B));
+	end
+
+	else
+	begin
+	//In = In_min;
+	In = V(A, B) / Roff;
+	end
+
+
+	//if((V(A, FG)>Vthp) && V(A, BG) > 0)
+	if((Con_p_eff > Con_n_eff) && (V(A, FG)>Vthp))
+	begin
+	Ip = Con_p_eff * pow((V(A, FG) - Vthp), 2) * pow((0.01 + (V(A, BG) - VB_th)), 2) * (Coe_fixed_DS+ Coe_DS * V(A, B));
+	end
+
+	else
+	begin
+	Ip = V(A, B) / Roff;
+	end
+
+if(Con_n_eff<0)
+begin
+Con_n_eff=0;
+In = V(A, B) / Roff;
+end
+
+
+if(Con_p_eff<0)
+begin
+Con_p_eff=0;
+Ip = V(A, B) / Roff;
+end
+
+
+/*
+if(Con_n_eff == 0)
+begin
+In = V(A, B) / Roff;
+end
+
+if(Con_p_eff == 0)
+begin
+Ip = V(A, B) / Roff;
+end
+*/
+
+
+
+//if(abs(In) > abs(Ip))
+/*
+if(Con_n_eff > Con_p_eff)
+begin
+VSFi = 1;
+end
+else
+begin
+VSFi = 2;
+end
+*/
+
+
+end
+
+
+
+else if(VAB<0)
+begin
+
+Con_n_eff = Con_n * (0.1 + (V(BG, A) - VB_th));
+
+Con_p_eff = Con_p * (0.1 + (V(B, BG) + VB_th));
+
+
+
+
+	//if((V(FG, A)>Vthn) && V(BG, A) > 0)
+	if((Con_n_eff > Con_p_eff) && (V(FG, A)>Vthn))
+	begin
+	In = -Con_n_eff * pow((V(FG, A) - Vthn), 2) * pow((0.01 + (V(BG, A) - VB_th)), 2) * (Coe_fixed_DS+ Coe_DS * V(B, A));
+	end
+	else
+	begin
+	In = V(A, B) / Roff;
+	end
+	
+	//if((V(B, FG)>Vthp) && V(B, BG) > 0)
+	if((Con_p_eff > Con_n_eff) && (V(B, FG)>Vthp))
+	begin
+	Ip = -Con_p_eff * pow((V(B, FG) - Vthp), 2) * pow((0.01 + (V(B, BG) - VB_th)), 2) * (Coe_fixed_DS+ Coe_DS * V(B, A));
+	end
+	else
+	begin
+	Ip = V(A, B) / Roff;
+	end
+
+
+
+if(Con_p_eff<0)
+begin
+Con_p_eff=0;
+Ip = V(A, B) / Roff;
+end
+
+if(Con_n_eff<0)
+begin
+Con_n_eff=0;
+In = V(A, B) / Roff;
+end
+
+
+
+//if(abs(In) > abs(Ip))
+/*if(Con_n_eff > Con_p_eff)
+begin
+VSFi = -1;
+end
+else
+begin
+VSFi = -2;
+end
+*/
+
+end
+
+else
+begin
+In=0;
+Ip=0;
+end
+
+//if((abs(In) < 5 * In_min) && (abs(Ip) < 5 * Ip_min))
+/*if((Con_n_eff < 0.15 * Con_n ) && (Con_p_eff < 0.15 * Con_p ))
+begin
+VSFi = 0;
+end
+*/
+
+/*
+if(abs(In)>abs(Ip))
+begin
+I(A, B) <+ In;
+end
+else
+begin
+I(A, B) <+ Ip;
+end
+*/
+
+if(abs(In)>abs(Ip))
+begin
+Iout = M* In;
+end
+else
+begin
+Iout = M* Ip;
+end
+
+
+//V(SF) <+ transition (VSFi, 1p, 500p, 500p);
+//IAconv = ddt(V(A)*C_conv);
+//IBconv = ddt(V(B)*C_conv);
+//I(A, B) <+ transition (Iout, 1p, 1p, 1p);
+I(A, B) <+ transition (Iout, 0, 10p, 10p);
+
+I(FG, A) <+ C_par * ddt(V(FG, A));
+I(BG, A) <+ C_par * ddt(V(BG, A));
+I(FG, B) <+ C_par * ddt(V(FG, B));
+I(BG, B) <+ C_par * ddt(V(BG, B));
+
+//I(A) <+ transition(IAconv,1p, 1p, 1p);
+//I(B) <+ transition(IBconv,1p, 1p, 1p);
+//I(A, B) <+ Iout;
+end
+
+endmodule
