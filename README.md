@@ -29,5 +29,12 @@ Ambipolar CNFETs for Scalable Machine Learning Classification,” Scientific Rep
 `git clone https://github.com/faridken/AP-CNFET_based_ML.git`
 
 
+2. Go to the src directory 
+
+`cd AP-CNFET_based_ML/src`
+
+3. Make sure you have downloaded the files to a dicrectory where you can envoke spectre simulator in Cadence
+
+
 
 
