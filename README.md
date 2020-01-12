@@ -35,6 +35,15 @@ Ambipolar CNFETs for Scalable Machine Learning Classification,” Scientific Rep
 
 3. Make sure you have downloaded the files to a directory where you can envoke spectre simulator in Cadence
 
+4. To point out to the correct component models you may need to change the dicretory of the modesl within netlist file (last three lines as attached below)
+
+ahdl_include "../lib/AP-CNFET/veriloga/veriloga.va"
+include "../lib/Resistor/res_monte.inc"
+ahdl_include "/opt/IC617/tools/dfII/samples/artist/ahdlLib/analog_mux/veriloga/veriloga.va"
+
+In this case we read the resistor and transistor models from the lib directory and read the analog_mux model from cadence directory which varies based on the installation directory.
+
+
 
 
 
