@@ -33,7 +33,7 @@ Ambipolar CNFETs for Scalable Machine Learning Classification,” Scientific Rep
 
 `cd AP-CNFET_based_ML/src`
 
-3. Make sure you have downloaded the files to a dicrectory where you can envoke spectre simulator in Cadence
+3. Make sure you have downloaded the files to a directory where you can envoke spectre simulator in Cadence
 
 
 
