@@ -35,25 +35,25 @@ Copyright (C) 1989-2015 Cadence Design Systems, Inc. All rights reserved worldwi
 ## Run Simulation
 
 1. Download the repository directly as a zip file or using git clone command:
-
+```
 `git clone https://github.com/faridken/AP-CNFET_based_ML.git`
-
+```
 2. Make sure you have downloaded the files to a directory where you can envoke spectre simulator in Cadence
 
 3. To point out to the correct component models you may need to change the dicretory of the modesl within netlist file (last three lines as attached below)
-
+```
 `ahdl_include "../lib/AP-CNFET/veriloga/veriloga.va"`
 
 `include "../lib/Resistor/res_monte.inc"`
 
 `ahdl_include "/opt/IC617/tools/dfII/samples/artist/ahdlLib/analog_mux/veriloga/veriloga.va"`
-
+```
 In this case we read the resistor and transistor models from the lib directory and read the analog_mux model from cadence directory which varies based on the installation directory.
 
 4. Go to the src directory 
-
+```
 `cd AP-CNFET_based_ML/src`
-
+```
 5. Enovoke the simulation using the commad below
 
 `spectre -64 ++aps +mt AP-CNFET.netlist`
@@ -61,11 +61,9 @@ In this case we read the resistor and transistor models from the lib directory a
 6. The simulation results will be stored in "AP-CNFET.raw" file.
 
 7. Simulation results can be analyzed using "Virtuoso Visualisation and Analysis (ViVA)" by envoking the command below
-
+```
 `viva -mode xl`
-
-
-
+```
 
 
 
