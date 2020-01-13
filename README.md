@@ -50,7 +50,12 @@ In this case we read the resistor and transistor models from the lib directory a
 
 6. The simulation results will be stored in "AP-CNFET.raw" file.
 
-7. 
+7. Simulation results can be analyzed using "Virtuoso Visualisation and Analysis (ViVA)" by envoking the command below
+
+`viva -mode xl`
+
+
+
 
 
 
