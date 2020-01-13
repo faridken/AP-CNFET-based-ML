@@ -67,7 +67,7 @@ In this case we read the transistor models from the lib directory and read the a
 
 The votes/decisions of binary classifiers are sampled with a frequency of 250MHz and are stored in "/output/decisions.csv". Finally the accuracy is obtained based on these decisions using a simple script (i.e., Accuracy.ipynb).      
 
-
+![alt text](images/acc.png)
 
 
 
