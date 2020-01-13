@@ -1,0 +1,579 @@
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 15.1.0.257 64bit -- 9 Oct 2015
+Copyright (C) 1989-2015 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence, Virtuoso and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: farid   Host: farid   HostID: 70A3130   PID: 5785
+Memory  available: 1.5639 GB  physical: 16.4332 GB
+Linux   : CentOS Linux release 7.6.1810 (Core) 
+CPU Type: Intel(R) Core(TM) i7-7700 CPU @ 3.60GHz
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [2816.5] (  4 ),  1 [2604.2] (  5 ),  2 [2600.0] (  6 )
+                 3 [2658.5] (  7 )
+        
+System load averages (1min, 5min, 15min) : 10.1 %, 6.6 %, 7.9 %
+Hyperthreading is enabled
+
+
+Simulating `AP-CNFET.netlist' on farid at 4:13:46 AM, Mon Jan 13, 2020 (process id: 5785).
+Current working directory: /home/farid/cadence_local/Github_AP-CNFET/src
+Command line:
+    /opt/MMSIM151/tools/bin/spectre -64 ++aps +mt AP-CNFET.netlist
+
+Loading /opt/MMSIM151/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /opt/MMSIM151/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /opt/MMSIM151/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /opt/MMSIM151/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /opt/MMSIM151/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/src/AP-CNFET.netlist
+Reading file:  /opt/MMSIM151/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/lib/AP-CNFET/veriloga/veriloga.va
+Reading file:  /opt/MMSIM151/tools.lnx86/spectre/etc/ahdl/constants.vams
+Reading file:  /opt/MMSIM151/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /opt/IC617/tools/dfII/samples/artist/ahdlLib/analog_mux/veriloga/veriloga.va
+Reading link:  /opt/IC617/tools
+Reading file:  /opt/IC617/tools.lnx86/dfII/samples/artist/spectreHDL/Verilog-A/analog/analog_mux.va
+Reading link:  /opt/MMSIM151/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading link:  /opt/MMSIM151/tools.lnx86/spectre/etc/ahdl/discipline.h
+Time for NDB Parsing: CPU = 53.862 ms, elapsed = 94.4109 ms.
+Time accumulated: CPU = 72.125 ms, elapsed = 94.4149 ms.
+Peak resident memory used = 38 Mbytes.
+
+
+The CPU load for active processors is :
+        Spectre  0 (55.6 %)      2 (11.1 %)      4 (18.2 %)      5 (10.0 %)
+                 6 (18.2 %)      7 (10.0 %)     
+        Other   
+Existing shared object for module analog_mux is up to date.
+Installed compiled interface for analog_mux.
+Existing shared object for module CNT4_transient is up to date.
+Installed compiled interface for CNT4_transient.
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f0_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f0_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f0_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f0_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f0_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f1_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f1_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f1_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f1_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f1_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f2_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f2_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f2_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f2_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f2_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f3_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f3_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f3_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f3_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f3_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f4_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f4_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f4_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f4_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f4_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f5_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f5_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f5_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f5_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f5_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f6_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f6_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f6_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f6_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f6_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f7_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f7_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f7_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f7_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f7_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f8_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f8_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f8_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f8_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f8_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f9_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f9_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f9_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f9_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f9_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f10_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f10_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f10_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f10_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f10_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f11_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f11_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f11_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f11_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f11_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f12_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f12_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f12_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f12_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f12_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f13_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f13_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f13_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f13_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f13_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f14_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f14_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f14_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f14_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f14_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f15_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f15_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f15_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f15_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f15_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f16_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f16_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f16_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f16_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f16_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f17_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f17_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f17_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f17_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f17_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f18_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f18_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f18_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f18_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f18_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f19_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f19_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f19_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f19_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f19_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f20_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f20_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f20_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f20_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f20_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f21_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f21_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f21_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f21_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f21_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f22_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f22_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f22_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f22_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f22_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f23_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f23_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f23_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f23_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f23_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f24_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f24_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f24_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f24_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f24_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f25_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f25_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f25_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f25_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f25_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f26_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f26_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f26_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f26_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f26_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f27_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f27_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f27_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f27_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f27_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f28_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f28_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f28_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f28_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f28_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f29_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f29_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f29_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f29_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f29_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f30_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f30_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f30_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f30_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f30_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f31_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f31_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f31_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f31_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f31_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f32_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f32_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f32_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f32_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f32_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f33_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f33_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f33_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f33_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f33_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f34_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f34_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f34_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f34_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f34_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f35_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f35_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f35_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f35_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f35_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f36_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f36_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f36_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f36_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f36_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f37_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f37_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f37_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f37_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f37_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f38_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f38_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f38_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f38_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f38_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f39_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f39_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f39_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f39_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f39_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f40_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f40_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f40_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f40_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f40_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f41_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f41_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f41_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f41_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f41_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f42_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f42_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f42_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f42_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f42_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f43_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f43_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f43_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f43_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f43_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f44_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f44_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f44_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f44_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f44_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f45_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f45_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f45_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f45_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f45_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f46_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f46_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f46_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f46_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f46_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f47_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f47_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f47_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f47_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f47_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f48_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f48_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f48_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f48_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f48_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f49_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f49_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f49_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f49_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f49_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f50_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f50_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f50_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f50_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f50_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f51_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f51_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f51_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f51_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f51_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f52_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f52_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f52_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f52_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f52_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f53_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f53_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f53_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f53_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f53_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f54_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f54_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f54_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f54_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f54_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f55_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f55_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f55_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f55_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f55_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f56_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f56_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f56_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f56_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f56_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f57_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f57_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f57_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f57_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f57_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f58_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f58_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f58_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f58_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f58_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f59_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f59_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f59_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f59_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f59_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f60_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f60_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f60_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f60_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f60_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f61_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f61_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f61_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f61_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f61_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f62_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f62_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f62_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f62_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f62_4.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f63_0.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f63_1.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f63_2.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f63_3.p
+Reading file:  /home/farid/cadence_local/Github_AP-CNFET/data/features/f63_4.p
+Time for Elaboration: CPU = 113.108 ms, elapsed = 114.339 ms.
+Time accumulated: CPU = 185.39 ms, elapsed = 208.919 ms.
+Peak resident memory used = 54.5 Mbytes.
+
+Time for EDB Visiting: CPU = 85.738 ms, elapsed = 85.7382 ms.
+Time accumulated: CPU = 271.294 ms, elapsed = 294.841 ms.
+Peak resident memory used = 64 Mbytes.
+
+
+Notice from spectre during topology check.
+    Only one connection to the following 3 nodes:
+        fn_16
+        fn_17
+        fp_55
+
+
+Global user options:
+             reltol = 0.001
+            vabstol = 1e-06
+            iabstol = 1e-12
+               temp = 27
+               tnom = 27
+             scalem = 1
+              scale = 1
+               gmin = 1e-12
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+        tempeffects = tc
+             digits = 5
+               cols = 80
+             pivrel = 0.001
+           sensfile = ../psf/sens.output
+     checklimitdest = psf
+               save = allpub
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 5044
+         analog_mux 4096  
+     CNT4_transient 1920  
+              relay 45    
+           resistor 124   
+            vsource 333   
+
+Analysis and control statement inventory:
+               info 7     
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+
+Notice from spectre during initial setup.
+    Fast APS Enabled.
+    Multithreading Enabled: 8 threads in the system with 8 available processors.
+
+Time for parsing: CPU = 6.26761 s, elapsed = 6.31331 s.
+Time accumulated: CPU = 6.53907 s, elapsed = 6.60833 s.
+Peak resident memory used = 281 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+****************************************************
+Transient Analysis `tran': time = (0 s -> 40.004 us)
+****************************************************
+Trying `homotopy = gmin' for initial conditions.
+Trying `homotopy = source' for initial conditions.
+DC simulation time: CPU = 2.15186 s, elapsed = 987.931 ms.
+
+Opening the PSF file AP-CNFET.raw/tran.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 40.004 us
+    step = 40.004 ns
+    maxstep = 800.08 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = tc
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+    rabsshort = 1 mOhm
+
+
+Output and IC/nodeset summary:
+                 save   330     (current)
+                 save   5041    (voltage)
+
+
+Warning from spectre at time = 7.00637 ns during transient analysis `tran'.
+    WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: fp_3.
+    WARNING (SPECTRE-16881): Detected possible convergence difficulties which might be related to Verilog-A models. Use the command-line option '-ahdllint=warn' to check the Verilog-A modeling issues.
+
+......
+
+Warning from spectre at time = 3.62 us during transient analysis `tran'.
+    WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: fp_15.
+    WARNING (SPECTRE-16881): Detected possible convergence difficulties which might be related to Verilog-A models. Use the command-line option '-ahdllint=warn' to check the Verilog-A modeling issues.
+
+......9......8......7......
+
+Warning from spectre at time = 15.516 us during transient analysis `tran'.
+    WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: fp_60.
+    WARNING (SPECTRE-16881): Detected possible convergence difficulties which might be related to Verilog-A models. Use the command-line option '-ahdllint=warn' to check the Verilog-A modeling issues.
+
+......9......8......7......6......5
+
+Warning from spectre at time = 19.808 us during transient analysis `tran'.
+    WARNING (SPECTRE-16191): Minimum time step used.  Solution might be in error.
+Warning from spectre at time = 19.808 us during transient analysis `tran'.
+    WARNING (SPECTRE-16191): Minimum time step used.  Solution might be in error.
+
+......9......8......7......6......5.
+
+Warning from spectre at time = 20.556 us during transient analysis `tran'.
+    WARNING (SPECTRE-16191): Minimum time step used.  Solution might be in error.
+Warning from spectre at time = 20.556 us during transient analysis `tran'.
+    WARNING (SPECTRE-16191): Minimum time step used.  Solution might be in error.
+
+......9......8......7......6......5......
+
+Warning from spectre at time = 23.612 us during transient analysis `tran'.
+    WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: fp_36.
+    WARNING (SPECTRE-16881): Detected possible convergence difficulties which might be related to Verilog-A models. Use the command-line option '-ahdllint=warn' to check the Verilog-A modeling issues.
+
+......9......8......7......6......5......4.....
+
+Warning from spectre at time = 27.024 us during transient analysis `tran'.
+    WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: fn_44.
+        Further occurrences of this warning will be suppressed.
+    WARNING (SPECTRE-16881): Detected possible convergence difficulties which might be related to Verilog-A models. Use the command-line option '-ahdllint=warn' to check the Verilog-A modeling issues.
+        Further occurrences of this warning will be suppressed.
+
+......9......8......7......6......5......4......3..
+
+Warning from spectre at time = 28.944 us during transient analysis `tran'.
+    WARNING (SPECTRE-16191): Minimum time step used.  Solution might be in error.
+        Further occurrences of this warning will be suppressed.
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             2350020
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (70.2 %)      1 (69.7 %)      2 (69.9 %)      3 (70.1 %)
+                 4 (69.5 %)      5 (69.3 %)      6 (69.4 %)      7 (69.4 %)
+        Other   
+Initial condition solution time: CPU = 2.15193 s, elapsed = 988.013 ms.
+Intrinsic tran analysis time:    CPU = 70.7455 ks, elapsed = 13.4263 ks.
+Total time required for tran analysis `tran': CPU = 70.7476 ks (19h 39m 8s), elapsed = 13.4273 ks (3h 43m 47s).
+Time accumulated: CPU = 70.7542 ks (19h 39m 14s), elapsed = 13.4339 ks (3h 43m 54s).
+Peak resident memory used = 319 Mbytes.
+
+
+Notice from spectre.
+    7 warnings suppressed.
+
+finalTimeOP: writing operating point information to rawfile.
+
+Opening the PSF file AP-CNFET.raw/finalTimeOP.info ...
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file AP-CNFET.raw/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file AP-CNFET.raw/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file AP-CNFET.raw/outputParameter.info ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSFASCII file AP-CNFET.raw/designParamVals.info ...
+primitives: writing primitives to rawfile.
+
+Opening the PSFASCII file AP-CNFET.raw/primitives.info.primitives ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSFASCII file AP-CNFET.raw/subckts.info.subckts ...
+
+Aggregate audit (7:57:40 AM, Mon Jan 13, 2020):
+Time used: CPU = 70.8 ks (19h 39m 14s), elapsed = 13.4 ks (3h 43m 54s), util. = 527%.
+Time spent in licensing: elapsed = 46.6 ms.
+Peak memory used = 320 Mbytes.
+Simulation started at: 4:13:46 AM, Mon Jan 13, 2020, ended at: 7:57:40 AM, Mon Jan 13, 2020, with elapsed time (wall clock): 13.4 ks (3h 43m 54s).
+spectre completes with 0 errors, 15 warnings, and 4 notices.
