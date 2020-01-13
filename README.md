@@ -20,7 +20,17 @@ Ambipolar CNFETs for Scalable Machine Learning Classification,” Scientific Rep
 - log - results of the simulation
 
 ## Verified platform
-[Centos 7](https://www.centos.org/)
+[CentOS Linux release 7.6.1810](https://www.centos.org/)
+
+## Software
+
+The simulations are performed using "Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator"
+
+Version 15.1.0.257 64bit -- 9 Oct 2015 
+
+Copyright (C) 1989-2015 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence, Virtuoso and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+
 
 ## Run Simulation
 
