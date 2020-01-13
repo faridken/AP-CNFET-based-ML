@@ -17,7 +17,8 @@ Ambipolar CNFETs for Scalable Machine Learning Classification,” Scientific Rep
 - data - input data
 - lib - library of the components used for simulation
 - src - simulation files (netlist of the circuit)
-- log - results of the simulation
+- log - log file for debugging and viewing dependencies
+- output - results of the simulation 
 
 ## Verified platform
 [CentOS Linux release 7.6.1810](https://www.centos.org/)
@@ -64,7 +65,7 @@ In this case we read the transistor models from the lib directory and read the a
 
 ## Simulation Results
 
-To extract the final accuracy results 
+The votes/decisions of binary classifiers are sampled with a frequency of 250MHz and are stored in "/output/decisions.csv". Finally the accuracy is obtained based on these decisions using a simple script (i.e., Accuracy.ipynb).      
 
 
 
