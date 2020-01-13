@@ -62,6 +62,10 @@ In this case we read the transistor models from the lib directory and read the a
 
 `viva -mode xl`
 
+## Simulation Results
+
+To extract the final accuracy results 
+
 
 
 
